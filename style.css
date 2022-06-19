@@ -57,7 +57,9 @@ a{
     text-decoration: none;
     color: white;
     font-family: 'Josefin Sans', sans-serif;
+    padding-bottom: 5px;
 }
+
 
 
 /* main code*/
@@ -76,7 +78,7 @@ body{
 
 h3,h2,h1{
     font-family: 'Josefin Sans', sans-serif;
-    font-weight: 200;
+    font-weight: 300;
 }
 h2{
     text-transform: uppercase;
@@ -95,6 +97,9 @@ h2{
     display: none;
     /* text-align: center; */
     margin-top: 100px;
+}
+#mobile-menu li{
+    margin-bottom: 10px;
 }
 
 nav{
@@ -135,16 +140,6 @@ h3{
 }
 
 /*button*/
-/* .reset-button{
-    background-color: none;
-    border-width: 0;
-    font-family: inherit;
-    font-size: inherit;
-    font-style: inherit;
-    font-weight: inherit;
-    line-height: inherit;
-    padding: 0;
-} */
 button{
     border: 2px solid black;
     text-transform: uppercase;
@@ -154,6 +149,16 @@ button{
     font: inherit;
     margin: 25px 0 100px;
 }
+
+button:hover {
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}
+
+/*
+bottom nav
+*/
 
 .bottom-nav{
     background-color: black;
@@ -182,12 +187,178 @@ span a{
 }
 
 .attribution {
-    font-size: 12px;
+    font-size: 15px;
     text-align: center;
     color: hsl(0, 0%, 41%);
     margin: 3px 0 10px;
 }
 
 .attribution a {
-    color: hsl(229, 47%, 57%);
+    color: hsl(229, 100%, 87%);
+}
+
+.section-2 .flex img:hover{
+    opacity: 0.3;
+}
+.section-2 .flex div:hover{
+    color: black;
+    font-weight: 300;
+}
+
+/**
+Desktop
+*/
+
+@media screen and (min-width:720px) {
+    #hamburger{
+        display: none;
+    }
+    #mobile-menu{
+        display: block;
+        /* display: inline-block; */
+        margin-top: 0;
+        /* margin-right: auto; */
+        float: right;
+    }
+    #mobile-menu li{
+        margin-bottom: 0;
+    }
+    .logo{
+        display: inline-block;
+    }
+    li{
+        display: inline-block;
+        text-transform: capitalize;
+        font-weight: 700;
+        font-size: 13px;
+        padding: 0;
+        margin-left: 30px;
+
+    }
+    ul{
+        margin: 0;
+        display: inline-flex;
+    }
+    #logo{
+        width: 190px;
+    }
+    .text-view-header{
+        top: 4%;    
+    }
+    .container{
+        width: 80%;
+        text-align: left;
+    }
+    .margin-overlay {
+        width: 80%;
+        margin: 0 10%;
+    }
+
+    h1{
+        font-size: 56px;
+    }
+    #heading{
+        margin-top: 0;
+        padding: 0;
+        margin: 100px 0 0 0;
+        padding: 30px;
+    }
+    /* .leader-image, .div-image{
+        display: inline-block;
+        width: 50%;
+    }
+     */
+    .section-1 {
+        /* display: inline-block; */
+        position: relative;
+        margin-bottom: 200px;
+    }
+    .leader-image{
+        display: inline-block;
+        width: 65%;
+    }
+    .div-image{
+        display: inline-block;
+        width: 45%;
+        text-align: left;
+        background-color: white;
+        padding: 75px 0 0px 75px;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        margin-bottom: 50px;
+    }
+
+    h2{
+        font-size: 36px;
+    }
+
+    .flex{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    .section-2 {
+        position: relative;
+    }
+    button{
+        display: inline;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0;
+        letter-spacing: 3px;
+        /* letter-spacing: 1.2em; */
+        font-weight: 600;
+        font-size: 11px;
+        padding: 10px 30px;
+    }
+    .text-view {
+        bottom: 40px;
+        left: 25px;
+    }
+    /*bottom nav*/
+    .bottom-nav{
+        text-align: left;
+        position: relative;
+        margin-bottom: 50px;
+    }
+    .bottom-nav img{
+        display: inline-block;
+        margin: 40px 0 30px;
+    }
+    .bottom-nav nav a {
+        display: inline-block;
+        font-weight: 600;
+        margin-bottom: 0;
+        /* margin-right: 20px; */
+        margin-right: 1%;
+    }
+    .bottom-nav nav{
+        margin-bottom: 50px;
+    }
+    .social-pos{
+        position: relative;
+    }
+    .social{
+        position: absolute;
+        top: 12%;
+        right: 0;
+        margin: 0;
+        /* font-size: 11px; */
+    }
+    footer{
+        position: absolute;
+        top: 40%;
+        /* top: 60%; */
+        right: 0;
+    }
+    a:hover {
+        border-bottom: 2px solid white;
+    }
+    .attribution{
+        margin: 0;
+        /* margin: 10px 0 10px 0; */
+    }
+
 }
