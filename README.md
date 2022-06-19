@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./Loopstudios%20landing%20page%20desktop.png)
-![](./Loopstudios%20landing%20page%20mobile.png)
+![](./loopstudios-landing-page-desktop.png)
+![](./Loopstudios-landing-page-mobile.png)
 
 ### Links
 
